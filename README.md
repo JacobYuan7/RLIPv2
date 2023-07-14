@@ -26,4 +26,4 @@
 ![colored_mesh (1)](assets/teaser.png)
 
 ## Updates
-The code and pre-trained models will be made publicly available after they pass internal review (expected several weeks). Stay tuned for updates! The codebase is based on [**RLIPv1**](https://github.com/JacobYuan7/RLIP).
+The code and pre-trained models will be made publicly available after they pass internal review (expected 2-3 weeks). Stay tuned for updates! The codebase is based on [**RLIPv1**](https://github.com/JacobYuan7/RLIP).
