@@ -6,7 +6,7 @@
     <a href='https://jacobyuan7.github.io/' target='_blank'>Hangjie Yuan</a>&emsp;
     <a href='https://scholar.google.com/citations?user=ZO3OQ-8AAAAJ&hl=en&oi=ao' target='_blank'>Shiwei Zhang</a>&emsp;
     <a href='https://scholar.google.com/citations?user=cQbXvkcAAAAJ&hl=en' target='_blank'>Xiang Wang</a>&emsp;
-    <a href='https://samuelalbanie.com/' target='_blank'>Shiwei Zhang</a>&emsp;
+    <a href='https://samuelalbanie.com/' target='_blank'>Samuel Albanie</a>&emsp;
     Yining Pan&emsp;<br>
     <a href='https://scholar.google.com/citations?user=JT8hRbgAAAAJ&hl=en' target='_blank'>Tao Feng</a>&emsp;
     <a href='https://scholar.google.com/citations?user=37gvStUAAAAJ&hl=en' target='_blank'>Jianwen Jiang</a>&emsp;
@@ -27,3 +27,27 @@
 
 ## Updates
 The code and pre-trained models will be made publicly available after they pass internal review (expected 2-3 weeks). Stay tuned for updates! The codebase is based on [**RLIPv1**](https://github.com/JacobYuan7/RLIP).
+
+## Citation
+```bibtex
+@inproceedings{Yuan2023RLIPv2,
+  title={RLIPv2: Fast Scaling of Relational Language-Image Pre-training},
+  author={Yuan, Hangjie and Zhang, Shiwei and Wang, Xiang and Albanie, Samuel and Pan, Yining and Feng, Tao and Jiang, Jianwen and Ni, Dong and Zhang, Yingya and Zhao, Deli},
+  booktitle={Proceedings of the IEEE/CVF International Conference on Computer Vision},
+  year={2023}
+}
+
+@inproceedings{Yuan2022RLIP,
+  title={RLIP: Relational Language-Image Pre-training for Human-Object Interaction Detection},
+  author={Yuan, Hangjie and Jiang, Jianwen and Albanie, Samuel and Feng, Tao and Huang, Ziyuan and Ni, Dong and Tang, Mingqian},
+  booktitle={Advances in Neural Information Processing Systems (NeurIPS)},
+  year={2022}
+}
+
+@inproceedings{Yuan2022OCN,
+  title={Detecting Human-Object Interactions with Object-Guided Cross-Modal Calibrated Semantics},
+  author={Hangjie Yuan and Mang Wang and Dong Ni and Liangpeng Xu},
+  booktitle={AAAI},
+  year={2022}
+}
+```
