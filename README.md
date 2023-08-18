@@ -7,7 +7,7 @@
     <a href='https://scholar.google.com/citations?user=ZO3OQ-8AAAAJ&hl=en&oi=ao' target='_blank'>Shiwei Zhang</a>&emsp;
     <a href='https://scholar.google.com/citations?user=cQbXvkcAAAAJ&hl=en' target='_blank'>Xiang Wang</a>&emsp;
     <a href='https://samuelalbanie.com/' target='_blank'>Samuel Albanie</a>&emsp;
-    <a href='https://pynsigrid.github.io/' target='_blank'>Yining Pan</a>&emsp;
+    <a href='https://pynsigrid.github.io/' target='_blank'>Yining Pan</a>&emsp;<br>
 <!--     Yining Pan&emsp;<br> -->
     <a href='https://scholar.google.com/citations?user=JT8hRbgAAAAJ&hl=en' target='_blank'>Tao Feng</a>&emsp;
     <a href='https://scholar.google.com/citations?user=37gvStUAAAAJ&hl=en' target='_blank'>Jianwen Jiang</a>&emsp;
