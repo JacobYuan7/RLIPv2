@@ -37,8 +37,38 @@
 > Through extensive experiments conducted on Human-Object Interaction Detection and Scene Graph Generation, RLIPv2 shows state-of-the-art performance on three benchmarks under fully-finetuning, few-shot and zero-shot settings.
 > Notably, the largest RLIPv2 achieves 23.29mAP on HICO-DET without any fine-tuning, yields 32.22mAP with just 1\% data and yields 45.09mAP with 100\% data.
 
-## Updates
-The code and pre-trained models will be made publicly available after they pass internal review (expected 2-3 weeks). Stay tuned for updates! The codebase is based on [**RLIPv1**](https://github.com/JacobYuan7/RLIP).
+
+## Todo List
+Note that if you can not get access to the links provided below, try using another browser or contact me by e-mail. 
+- [ ] 🎉 Release code for pre-training, fine-tuning and inference.
+- [ ] 🕘 Release pre-training and fine-tuning annotations. 
+- [ ] 🕘 Release checkpoints for pre-training, few-shot, zero-shot and fine-tuning.  
+- [ ] 🕘 Include support for inference on custom images.
+
+
+## Information before using this repo
+I changed all the paths to prevent from possible information leakage.
+In order to run the code, you will need to configure the paths to match your own system.
+To do this, search for the "/PATH/TO" placeholder in the code and replace it with the appropriate file path on your system. 
+⭐⭐⭐Consider starring the repo! ⭐⭐⭐
+
+## Environment setup
+I recommend creating a new conda environment in order to run the code.
+You can check `scripts/create_environment.txt` to acquire details on how to set up the environment.
+
+## Model Outline
+This repo contains the implementation of various methods to resolve HOI detection (not limited to RLIP), aiming to serve as a benchmark for HOI detection. Below methods are included in this repo:
+ - [RLIPv2-ParSeDA]() (model name in the repo: RLIP_ParSeDA_v2);
+ - [RLIPv2-ParSeD]() (model name in the repo: RLIP_ParSeD_v2);
+ - [RLIP-ParSe](https://arxiv.org/abs/2209.01814) (model name in the repo: RLIP-ParSe);
+ - [ParSe](https://arxiv.org/abs/2209.01814) (model name in the repo: ParSe);
+ - [RLIP-ParSeD](https://arxiv.org/abs/2209.01814) (model name in the repo: RLIP-ParSeD);
+ - [ParSeD](https://arxiv.org/abs/2209.01814) (model name in the repo: ParSeD);
+ - [OCN](https://github.com/JacobYuan7/OCN-HOI-Benchmark) (model name in the repo: OCN), which is a prior work of RLIP;  
+ - [QPIC](https://github.com/hitachi-rd-cv/qpic) (model name in the repo: DETRHOI);
+ - [QAHOI](https://github.com/cjw2021/QAHOI) (model name in the repo: DDETRHOI);
+ - [CDN](https://github.com/YueLiao/CDN) (model name in the repo: CDN);
+
 
 ## Citation
 ```bibtex
@@ -63,3 +93,80 @@ The code and pre-trained models will be made publicly available after they pass 
   year={2022}
 }
 ```
+
+
+## Annotation Preparation
+| Dataset | Setting | Download |
+| ---------- | :-----------:  | :-----------:  |
+| VG | RLIP | [Link](https://zjueducn-my.sharepoint.com/:u:/g/personal/hj_yuan_zju_edu_cn/EWEPvw_EEttNt4TNHABDWbgB0S4LBPzlxvPidh_MhEEUTQ?e=j9gBjk) |
+| COCO (pseudo) | RLIP | [Link]() |
+| Objects365 | RLIP | [Link]() |
+| Open Images | Fully-finetuning  | [Link]() |
+| HICO-DET | Few-shot 1%, 10% | [Link](https://zjueducn-my.sharepoint.com/:f:/g/personal/hj_yuan_zju_edu_cn/Eh7UufFbB_5Dutvr66g-t6sBn5wCeA0uzMwiy8mUxaD50g?e=IKB3SD) |
+| HICO-DET | Zero-shot (UC-NF, UC-RF)\* | [Link](https://zjueducn-my.sharepoint.com/:f:/g/personal/hj_yuan_zju_edu_cn/Ev9BzZxOlT5Mt04wOpIHA5kBP2eA6fijjweI_kh9WN3MUw?e=jMJmu6) |
+
+Note: ① \* Zero-shot (NF) do not need any HICO-DET annotations for fine-tuning, so we only provide training annotations for the UC-NF and UC-RF setting.
+
+
+## Pre-training Datasets preparation
+
+### 1. Visual Genome
+Firstly, we could download VG dataset from the [official link](https://visualgenome.org/api/v0/api_home.html), inclduing images Part I and Part II. (**Note: If the official website is not working, you can use the link that I provide: [Images](https://zjueducn-my.sharepoint.com/:u:/g/personal/hj_yuan_zju_edu_cn/Ed38rTcxgq9JnMdQS0SUSAIBE2azKnbq8_ZosJ6RZHaJjg?e=bpeuLt) and [Images2](https://zjueducn-my.sharepoint.com/:u:/g/personal/hj_yuan_zju_edu_cn/Ea09ejSJ_KpJm_CKmmgMeScB81gSfJXD9gp7INzSrX53mg?e=pPQCo1).**) The annotations after pre-processing could be downloaded from the link above, which is used for pre-training. Note that this is generated from `scene_graphs.json` file by several pre-processing steps to remove redundant triplets. Also, several settings mentioned below also need the annotations that we provide. VG dataset and its corresponding annotations should be organized as follows:
+```
+VG
+ |─ annotations
+ |   |— scene_graphs_after_preprocessing.json
+ |   :
+ |— images
+ |   |— 2409818.jpg
+ |   |— n102412.jpg
+ :   :
+```
+
+### 2. COCO
+Firstly, try downloading the [COCO2017](https://cocodataset.org/#download) dataset from the official link. If you want to run R-Tagger, you need to download the bounding box annotations from the website as well. If you just want to perform relational pre-training, you can merely download the pseudo-annotations for COCO2017.
+The dataset should be organized as follows:
+```
+COCO2017
+ |— annotations
+ |   |— instances_train2017.json
+ |   |— instances_val2017.json
+ |   └─ RLIPv2_train2017_threshold20.....json
+ |   
+ |— train2017
+ |   |— 000000498666.jpg
+ |   :
+ |
+ |— val2017
+ |   |— 000000414261.jpg
+ :   :
+```
+
+### 3. Objects365
+Firstly, download the [Objects365](https://www.objects365.org/download.html) dataset from the official link. This dataset contains 51 training patches and 44 validation patches, which are summed to more than 1700k images used for pre-training. 
+Similarly, if you want to run R-Tagger, you need to download the bounding box annotations from the website as well. 
+If you just want to perform relational pre-training, you can merely download the pseudo-annotations for Objects365.
+(Btw, you can try use the script in `scripts/datasets` folder.)
+The dataset should be organized as follows:
+```
+Objects365
+ |— train 
+ |   |— patch0
+ |   |— patch1
+ |   :
+ |   |— patch50
+ |   └─ zhiyuan_objv2_train.json
+ |
+ |— val
+ |   |— patch0
+ |   |— patch1
+ |   :
+ |   |— patch43
+ |   └─ zhiyuan_objv2_val.json
+ |
+ |— rel_annotations
+ |    └─ RLIPv2_o365trainval_Tagger2.....json
+ |
+ └─ image_id_to_filepath.json
+```
+
