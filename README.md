@@ -170,3 +170,66 @@ Objects365
  └─ image_id_to_filepath.json
 ```
 
+
+## Downstream Dataset preparation
+### 1. HICO-DET
+HICO-DET dataset can be downloaded [here](https://drive.google.com/open?id=1QZcJmGVlF9f4h-XLWe9Gkmnmj2z1gSnk). After finishing downloading, unpack the tarball (`hico_20160224_det.tar.gz`) to the `data` directory.
+
+Instead of using the original annotations files, we use the annotation files provided by the PPDM authors. The annotation files can be downloaded from [here](https://drive.google.com/open?id=1WI-gsNLS-t0Kh8TVki1wXqc3y2Ow1f2R). The downloaded annotation files have to be placed as follows.
+```
+qpic
+ |─ data
+ │   └─ hico_20160224_det
+ |       |─ annotations
+ |       |   |─ trainval_hico.json
+ |       |   |─ test_hico.json
+ |       |   └─ corre_hico.npy
+ :       :
+```
+
+### 2. V-COCO
+First clone the repository of V-COCO from [here](https://github.com/s-gupta/v-coco), and then follow the instruction to generate the file `instances_vcoco_all_2014.json`. Next, download the prior file `prior.pickle` from [here](https://drive.google.com/drive/folders/10uuzvMUCVVv95-xAZg5KS94QXm7QXZW4). Place the files and make directories as follows.
+```
+qpic
+ |─ data
+ │   └─ v-coco
+ |       |─ data
+ |       |   |─ instances_vcoco_all_2014.json
+ |       |   :
+ |       |─ prior.pickle
+ |       |─ images
+ |       |   |─ train2014
+ |       |   |   |─ COCO_train2014_000000000009.jpg
+ |       |   |   :
+ |       |   └─ val2014
+ |       |       |─ COCO_val2014_000000000042.jpg
+ |       |       :
+ |       |─ annotations
+ :       :
+```
+The annotation file has to be converted to the HOIA format. The conversion can be conducted as follows.
+```
+PYTHONPATH=data/v-coco \
+        python convert_vcoco_annotations.py \
+        --load_path data/v-coco/data \
+        --prior_path data/v-coco/prior.pickle \
+        --save_path data/v-coco/annotations
+```
+Note that only Python2 can be used for this conversion because `vsrl_utils.py` in the v-coco repository shows a error with Python3.
+
+V-COCO annotations with the HOIA format, `corre_vcoco.npy`, `test_vcoco.json`, and `trainval_vcoco.json` will be generated to `annotations` directory.
+
+### 3. Open Images v6
+Open Images v6 can be downloaded from this [link](https://github.com/SHTUPLUS/PySGG/blob/main/DATASET.md).
+We transform the annotations to the HICO-DET format, which can be downloaded from the link provided [above](## Annotation Preparation).
+The dataset should be organized as follows:
+```
+Open Images v6
+ |
+ |─ images
+ |    |─ ca5267a6336b71ea.jpg
+ |    :
+ |
+ └─ annotations
+```
+
