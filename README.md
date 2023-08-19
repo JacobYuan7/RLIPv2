@@ -100,7 +100,7 @@ This repo contains the implementation of various methods to resolve HOI detectio
 | ---------- | :-----------:  | :-----------:  |
 | VG | RLIP | [Link](https://zjueducn-my.sharepoint.com/:u:/g/personal/hj_yuan_zju_edu_cn/EWEPvw_EEttNt4TNHABDWbgB0S4LBPzlxvPidh_MhEEUTQ?e=j9gBjk) |
 | COCO (pseudo) | RLIP | [Link]() |
-| Objects365 | RLIP | [Link]() |
+| Objects365 (pseudo) | RLIP | [Link]() |
 | Open Images | Fully-finetuning  | [Link]() |
 | HICO-DET | Few-shot 1%, 10% | [Link](https://zjueducn-my.sharepoint.com/:f:/g/personal/hj_yuan_zju_edu_cn/Eh7UufFbB_5Dutvr66g-t6sBn5wCeA0uzMwiy8mUxaD50g?e=IKB3SD) |
 | HICO-DET | Zero-shot (UC-NF, UC-RF)\* | [Link](https://zjueducn-my.sharepoint.com/:f:/g/personal/hj_yuan_zju_edu_cn/Ev9BzZxOlT5Mt04wOpIHA5kBP2eA6fijjweI_kh9WN3MUw?e=jMJmu6) |
