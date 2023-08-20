@@ -109,7 +109,7 @@ This repo contains the implementation of various methods to resolve HOI detectio
 Note: ① \* Zero-shot (NF) do not need any HICO-DET annotations for fine-tuning, so we only provide training annotations for the UC-NF and UC-RF setting.
 
 
-## Pre-training Datasets preparation
+## Pre-training Datasets Preparation
 
 ### 1. Visual Genome
 Firstly, we could download VG dataset from the [official link](https://visualgenome.org/api/v0/api_home.html), inclduing images Part I and Part II. (**Note: If the official website is not working, you can use the link that I provide: [Images](https://zjueducn-my.sharepoint.com/:u:/g/personal/hj_yuan_zju_edu_cn/Ed38rTcxgq9JnMdQS0SUSAIBE2azKnbq8_ZosJ6RZHaJjg?e=bpeuLt) and [Images2](https://zjueducn-my.sharepoint.com/:u:/g/personal/hj_yuan_zju_edu_cn/Ea09ejSJ_KpJm_CKmmgMeScB81gSfJXD9gp7INzSrX53mg?e=pPQCo1).**) The annotations after pre-processing could be downloaded from the link above, which is used for pre-training. Note that this is generated from `scene_graphs.json` file by several pre-processing steps to remove redundant triplets. Also, several settings mentioned below also need the annotations that we provide. VG dataset and its corresponding annotations should be organized as follows:
