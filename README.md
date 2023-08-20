@@ -234,3 +234,101 @@ Open Images v6
  └─ annotations
 ```
 
+## Relational Language-Image Pre-training
+We provide a series of pre-trained weights for you to use.
+First of all, we provide weights after relational pre-training (RLIP weights) on VG+COCO+Objects365 using RLIPv2-ParSeDA.
+| Model | Pre-training Paradigm | Pre-training Dataset | Backbone | Download |
+| ---------- | :-----------: | :-----------: | :-----------: | :-----------: |
+| RLIPv2-ParSeDA | RLIP | VG+COCO+O365 | ResNet-50 | [Link]() |
+| RLIPv2-ParSeDA | RLIP | VG+COCO+O365 | Swin-T | [Link]() |
+| RLIPv2-ParSeDA | RLIP | VG+COCO+O365 | Swin-L | [Link]() |
+
+Secondly, we provide object detection weights (OD weights) on VG+COCO+Objects365 used to initialze RLIPv2-ParSeDA for RLIP.
+| Model | Pre-training Paradigm | Pre-training Dataset | Backbone | Download |
+| ---------- | :-----------: | :-----------: | :-----------: | :-----------: |
+| RLIPv2-ParSeDA | OD | VG+COCO | ResNet-50 | [Link]() |
+| RLIPv2-ParSeDA | OD | VG+COCO+O365 | ResNet-50 | [Link]() |
+| RLIPv2-ParSeDA | OD | VG+COCO | Swin-T | [Link]() |
+| RLIPv2-ParSeDA | OD | VG+COCO+O365 | Swin-T | [Link]() |
+| RLIPv2-ParSeDA | OD | VG+COCO | Swin-L | [Link]() |
+| RLIPv2-ParSeDA | OD | VG+COCO+O365 | Swin-L | [Link]() |
+
+Note that all the scripts used for pre-training RLIPv2 are presented under `scripts/RLIP_ParSeDA`.
+For instance, `train_RLIP_ParSeDA_v2_mixed_vgcocoo365_swinL.sh` means that this script is responsible for pre-training on mixed datasets of VG+COCO+O365 using Swin-L and RLIPv2-ParSeDA.
+
+## Downstream tasks
+We provide a series of checkpoints below, which could be used for reproducing results in the paper.
+Note that all the scripts used for fine-tuning RLIPv2 are presented under `scripts/RLIP_ParSeDA`.
+For instance, `fine_tune_RLIP_ParSeDA_v2_hico_swinL_few-shot.sh` means that this script is responsible for few-shot transfer on HICO-DET using Swin-L and RLIPv2-ParSeDA.
+
+### Fully fine-tuning on HICO-DET
+| Model | Backbone | Rare / Non-Rare / Full | Download |
+| ----- | :------: | :--------------------: | :------: |
+| RLIPv2-ParSeDA | ResNet-50 | 29.61 / 37.10 / 35.38 | [Link]() |
+| RLIPv2-ParSeDA | Swin-T | 33.66 / 40.07 / 38.60 | [Link]() |
+| RLIPv2-ParSeDA | Swin-L | 43.23 / 45.64 / 45.09 | [Link]() |
+
+### Few-shot transfer on HICO-DET
+| Model | Backbone | Setting | Rare / Non-Rare / Full | Download |
+| ----- | :------: | :-----: | :--------------------: | :------: |
+| RLIPv2-ParSeDA | ResNet-50 | 1% | 22.13 / 24.51 / 23.96 | [Link]() |
+| RLIPv2-ParSeDA | ResNet-50 | 10% | & 23.28 / 30.02 / 28.46 | [Link]() |
+| RLIPv2-ParSeDA | Swin-T | 1% | 24.26 / 28.92 / 27.85 | [Link]() |
+| RLIPv2-ParSeDA | Swin-T | 10% | 28.31 / 32.93 / 31.87 | [Link]() |
+| RLIPv2-ParSeDA | Swin-L | 1% | 31.89 / 32.32 / 32.22 | [Link]() |
+| RLIPv2-ParSeDA | Swin-L | 10% | 34.75 / 38.27 / 37.46 | [Link]() |
+
+### Zero-shot on HICO-DET
+| Model | Backbone | Setting | Rare / Non-Rare / Full | Download |
+| ----- | :------: | :-----: | :--------------------: | :------: |
+| RLIPv2-ParSeDA | ResNet-50 | NF | 19.64 / 17.24 / 17.79 | [Link]() |
+| RLIPv2-ParSeDA | ResNet-50 | UC-RF | 21.45 / 35.85 / 32.97 | [Link]() |
+| RLIPv2-ParSeDA | ResNet-50 | UC-NF | 22.81 / 29.52 / 28.18 | [Link]() |
+| RLIPv2-ParSeDA | Swin-T | NF | 21.24 / 19.47 / 19.87 | [Link]() |
+| RLIPv2-ParSeDA | Swin-T | UC-RF | 26.95 / 39.92 / 37.32 | [Link]() |
+| RLIPv2-ParSeDA | Swin-T | UC-NF | 21.07 / 35.07 / 32.27 | [Link]() |
+| RLIPv2-ParSeDA | Swin-L | NF | 27.97 / 21.90 / 23.29 | [Link]() |
+| RLIPv2-ParSeDA | Swin-L | UC-RF | 31.23 / 45.01 / 42.26 | [Link]() |
+| RLIPv2-ParSeDA | Swin-L | UC-NF | 22.65 / 40.51 / 36.94 | [Link]() |
+
+### Fully fine-tuning on V-COCO
+| Model | Backbone | Rare / Non-Rare / Full | Download |
+| ----- | :------: | :--------------------: | :------: |
+| RLIPv2-ParSeDA | ResNet-50 | 65.9 / 68.0 | [Link]() |
+| RLIPv2-ParSeDA | Swin-T | 68.8 / 70.8 | [Link]() |
+| RLIPv2-ParSeDA | Swin-L | 72.1 / 74.1 | [Link]() |
+
+### Fully fine-tuning on Open Images v6
+| Model | Backbone | R@50 / wmAP_rel / wmAP_phr / score_wtd | Download |
+| ----- | :------: | :------------------------------------: | :------: |
+| RLIPv2-ParSeDA | ResNet-50 | 65.99 / 49.54 / 45.71 / 51.30 | [Link]() |
+| RLIPv2-ParSeDA | Swin-T | 68.81 / 52.70 / 48.01 / 54.05 | [Link]() |
+| RLIPv2-ParSeDA | Swin-L | 72.49 / 56.38 / 50.70 / 57.34 | [Link]() |
+
+
+## Evaluation
+The mAP on HICO-DET under the Full set, Rare set and Non-Rare Set will be reported during the training process.
+
+The results for the official evaluation of V-COCO must be obtained by the generated pickle file of detection results.
+```shell
+cd /PATH/TO/RLIP
+python generate_vcoco_official.py \
+        --param_path /PATH/TO/CHECKPOINT \
+        --save_path vcoco.pickle \
+        --hoi_path /PATH/TO/VCOCO/DATA \
+```
+Then you should run following codes after modifying the path to get the final performance:
+```shell
+cd /PATH/TO/RLIP
+python datasets/vsrl_eval.py
+```
+
+## Relational pseudo-labelling
+As detailed in the Figure 3 of the main paper, it involves (i) generating the captions using a captioner (i.e. BLIP), (ii) generating a relation candidate set and (iii) assigning relation texts to region pairs via an R-Tagger.
+- Step 1: run `RLIP_caption_coco.py` under the `BLIP-main` folder to generate captions.
+- Step 2: run `transform_BLIP_sentences_to_triplets()` function in `datasets/rlipv2_helper/BLIP_coco_caption_helper.py` to obtain scene graphs and run `transform_BLIP_sngs_to_verb_tagger_input_format()` function in `datasets/rlipv2_helper/BLIP_coco_caption_helper.py` to obtain relation candidate sets for images.
+- Step 3: run `scripts/verb_tagger/test_Tagger_resnet.sh` script (which runs `generate_relations_using_verb_tagger.py`) to assign relation texts to region pairs via R-Tagger.
+
+
+## Acknowledgement
+Part of this work's implemention refers to several prior works including [RLIP](https://github.com/JacobYuan7/RLIP), [OCN](https://github.com/JacobYuan7/OCN-HOI-Benchmark), [QPIC](https://github.com/hitachi-rd-cv/qpic), [CDN](https://github.com/YueLiao/CDN), [DETR](https://github.com/facebookresearch/detr), [DDETR](https://github.com/fundamentalvision/Deformable-DETR), [MDETR](https://github.com/ashkamath/mdetr) and [GLIP](https://github.com/microsoft/GLIP).
