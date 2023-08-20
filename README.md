@@ -40,11 +40,12 @@
 
 ## Todo List
 Note that if you can not get access to the links provided below, try using another browser or contact me by e-mail. 
-- [ ] 🎉 Release code for pre-training, fine-tuning and inference.
+- [x] 🎉 Release code for pre-training, fine-tuning and inference.
 - [ ] 🕘 Release pre-training and fine-tuning annotations. 
 - [ ] 🕘 Release checkpoints for pre-training, few-shot, zero-shot and fine-tuning.  
 - [ ] 🕘 Include support for inference on custom images.
-Give me several days to finish uploading all these because it is time-consuming.
+
+Allow me to upload all the files in the following days to come because it is time-consuming.
 
 ## Information before using this repo
 I changed all the paths to prevent from possible information leakage.
