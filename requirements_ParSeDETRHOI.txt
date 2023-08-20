@@ -1,0 +1,20 @@
+cython
+matplotlib
+cycler
+certifi
+python-dateutil
+pyparsing
+opencv-python
+kiwisolver
+pillow
+git+https://github.com/cocodataset/panopticapi.git#egg=panopticapi
+scipy
+xmltodict
+tqdm
+onnx
+onnxruntime
+prettytable
+timm
+h5py
+# opencv-python
+# scipy
