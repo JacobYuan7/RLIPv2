@@ -38,7 +38,7 @@
 > Notably, the largest RLIPv2 achieves 23.29mAP on HICO-DET without any fine-tuning, yields 32.22mAP with just 1\% data and yields 45.09mAP with 100\% data.
 
 
-## Todo List
+## Todo list
 Note that if you can not get access to the links provided below, try using another browser or contact me by e-mail. 
 - [x] 🎉 Release code for pre-training, fine-tuning and inference.
 - [ ] 🕘 Release pre-training and fine-tuning annotations. 
@@ -57,7 +57,7 @@ To do this, search for the "/PATH/TO" placeholder in the code and replace it wit
 I recommend creating a new conda environment in order to run the code.
 You can check `scripts/create_environment.txt` to acquire details on how to set up the environment.
 
-## Model Outline
+## Model outline
 This repo contains the implementation of various methods to resolve HOI detection (not limited to RLIP), aiming to serve as a benchmark for HOI detection. Below methods are included in this repo:
  - [RLIPv2-ParSeDA]() (model name in the repo: RLIP_ParSeDA_v2);
  - [RLIPv2-ParSeD]() (model name in the repo: RLIP_ParSeD_v2);
@@ -96,7 +96,7 @@ This repo contains the implementation of various methods to resolve HOI detectio
 ```
 
 
-## Annotation Preparation
+## Annotation preparation
 | Dataset | Setting | Download |
 | ---------- | :-----------:  | :-----------:  |
 | VG | RLIP | [Link](https://zjueducn-my.sharepoint.com/:u:/g/personal/hj_yuan_zju_edu_cn/EWEPvw_EEttNt4TNHABDWbgB0S4LBPzlxvPidh_MhEEUTQ?e=j9gBjk) |
@@ -109,7 +109,7 @@ This repo contains the implementation of various methods to resolve HOI detectio
 Note: ① \* Zero-shot (NF) do not need any HICO-DET annotations for fine-tuning, so we only provide training annotations for the UC-NF and UC-RF setting.
 
 
-## Pre-training Datasets Preparation
+## Pre-training datasets preparation
 
 ### 1. Visual Genome
 Firstly, we could download VG dataset from the [official link](https://visualgenome.org/api/v0/api_home.html), inclduing images Part I and Part II. (**Note: If the official website is not working, you can use the link that I provide: [Images](https://zjueducn-my.sharepoint.com/:u:/g/personal/hj_yuan_zju_edu_cn/Ed38rTcxgq9JnMdQS0SUSAIBE2azKnbq8_ZosJ6RZHaJjg?e=bpeuLt) and [Images2](https://zjueducn-my.sharepoint.com/:u:/g/personal/hj_yuan_zju_edu_cn/Ea09ejSJ_KpJm_CKmmgMeScB81gSfJXD9gp7INzSrX53mg?e=pPQCo1).**) The annotations after pre-processing could be downloaded from the link above, which is used for pre-training. Note that this is generated from `scene_graphs.json` file by several pre-processing steps to remove redundant triplets. Also, several settings mentioned below also need the annotations that we provide. VG dataset and its corresponding annotations should be organized as follows:
@@ -172,7 +172,7 @@ Objects365
 ```
 
 
-## Downstream Dataset preparation
+## Downstream dataset preparation
 ### 1. HICO-DET
 HICO-DET dataset can be downloaded [here](https://drive.google.com/open?id=1QZcJmGVlF9f4h-XLWe9Gkmnmj2z1gSnk). After finishing downloading, unpack the tarball (`hico_20160224_det.tar.gz`) to the `data` directory.
 
