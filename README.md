@@ -327,7 +327,7 @@ python datasets/vsrl_eval.py
 As detailed in the Figure 3 of the main paper, it involves (i) generating the captions using a captioner (i.e. BLIP), (ii) generating a relation candidate set and (iii) assigning relation texts to region pairs via an R-Tagger.
 - Step 1: run `RLIP_caption_coco.py` under the `BLIP-main` folder to generate captions. Code are available [here](https://github.com/JacobYuan7/BLIP_for_RLIPv2).
 - Step 2: run `transform_BLIP_sentences_to_triplets()` function in `datasets/rlipv2_helper/BLIP_coco_caption_helper.py` to obtain scene graphs and run `transform_BLIP_sngs_to_verb_tagger_input_format()` function in `datasets/rlipv2_helper/BLIP_coco_caption_helper.py` to obtain relation candidate sets for images.
-- Step 3: run `scripts/verb_tagger/test_Tagger_resnet.sh` script (which runs `generate_relations_using_verb_tagger.py`) to assign relation texts to region pairs via R-Tagger. The parameters and generated captions can be downloaded from [this link]().
+- Step 3: run `scripts/verb_tagger/test_Tagger_resnet.sh` script (which runs `generate_relations_using_verb_tagger.py`) to assign relation texts to region pairs via R-Tagger. The parameters and generated captions can be downloaded from [this link](https://zjueducn-my.sharepoint.com/:f:/g/personal/hj_yuan_zju_edu_cn/Et_f-6DONt5DoFffjwWtBfsBzhXG5Kv3bhGrY8rtJpc7QA?e=LIqOIS).
 
 
 ## Acknowledgement
