@@ -272,7 +272,7 @@ For instance, `fine_tune_RLIP_ParSeDA_v2_hico_swinL_few-shot.sh` means that this
 | Model | Backbone | Setting | Rare / Non-Rare / Full | Download |
 | ----- | :------: | :-----: | :--------------------: | :------: |
 | RLIPv2-ParSeDA | ResNet-50 | 1% | 22.13 / 24.51 / 23.96 | [Link]() |
-| RLIPv2-ParSeDA | ResNet-50 | 10% | & 23.28 / 30.02 / 28.46 | [Link]() |
+| RLIPv2-ParSeDA | ResNet-50 | 10% | 23.28 / 30.02 / 28.46 | [Link]() |
 | RLIPv2-ParSeDA | Swin-T | 1% | 24.26 / 28.92 / 27.85 | [Link]() |
 | RLIPv2-ParSeDA | Swin-T | 10% | 28.31 / 32.93 / 31.87 | [Link]() |
 | RLIPv2-ParSeDA | Swin-L | 1% | 31.89 / 32.32 / 32.22 | [Link]() |
