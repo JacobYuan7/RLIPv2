@@ -244,15 +244,15 @@ First of all, we provide weights after relational pre-training (RLIP weights) on
 | RLIPv2-ParSeDA | RLIP | VG+COCO+O365 | Swin-T | [Link]() |
 | RLIPv2-ParSeDA | RLIP | VG+COCO+O365 | Swin-L | [Link]() |
 
-Secondly, we provide object detection weights (OD weights) on VG+COCO+Objects365 used to initialze RLIPv2-ParSeDA for RLIP.
+Secondly, we provide object detection weights (OD weights) on COCO+Objects365, used to initialize RLIPv2-ParSeDA for RLIP.
 | Model | Pre-training Paradigm | Pre-training Dataset | Backbone | Download |
 | ---------- | :-----------: | :-----------: | :-----------: | :-----------: |
-| RLIPv2-ParSeDA | OD | VG+COCO | ResNet-50 | [Link]() |
-| RLIPv2-ParSeDA | OD | VG+COCO+O365 | ResNet-50 | [Link]() |
-| RLIPv2-ParSeDA | OD | VG+COCO | Swin-T | [Link]() |
-| RLIPv2-ParSeDA | OD | VG+COCO+O365 | Swin-T | [Link]() |
-| RLIPv2-ParSeDA | OD | VG+COCO | Swin-L | [Link]() |
-| RLIPv2-ParSeDA | OD | VG+COCO+O365 | Swin-L | [Link]() |
+| RLIPv2-ParSeDA | OD | COCO | ResNet-50 | [Link]() |
+| RLIPv2-ParSeDA | OD | COCO+O365 | ResNet-50 | [Link]() |
+| RLIPv2-ParSeDA | OD | COCO | Swin-T | [Link]() |
+| RLIPv2-ParSeDA | OD | COCO+O365 | Swin-T | [Link]() |
+| RLIPv2-ParSeDA | OD | COCO | Swin-L | [Link]() |
+| RLIPv2-ParSeDA | OD | COCO+O365 | Swin-L | [Link]() |
 
 Note that all the scripts used for pre-training RLIPv2 are presented under `scripts/RLIP_ParSeDA`.
 For instance, `train_RLIP_ParSeDA_v2_mixed_vgcocoo365_swinL.sh` means that this script is responsible for pre-training on mixed datasets of VG+COCO+O365 using Swin-L and RLIPv2-ParSeDA.
