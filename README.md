@@ -60,8 +60,8 @@ You can check `scripts/create_environment.txt` to acquire details on how to set 
 
 ## Model outline
 This repo contains the implementation of various methods to resolve HOI detection (not limited to RLIP), aiming to serve as a benchmark for HOI detection. Below methods are included in this repo:
- - [RLIPv2-ParSeDA]() (model name in the repo: RLIP_ParSeDA_v2);
- - [RLIPv2-ParSeD]() (model name in the repo: RLIP_ParSeD_v2);
+ - [RLIPv2-ParSeDA](https://arxiv.org/abs/2308.09351) (model name in the repo: RLIP_ParSeDA_v2);
+ - [RLIPv2-ParSeD](https://arxiv.org/abs/2308.09351) (model name in the repo: RLIP_ParSeD_v2);
  - [RLIP-ParSe](https://arxiv.org/abs/2209.01814) (model name in the repo: RLIP-ParSe);
  - [ParSe](https://arxiv.org/abs/2209.01814) (model name in the repo: ParSe);
  - [RLIP-ParSeD](https://arxiv.org/abs/2209.01814) (model name in the repo: RLIP-ParSeD);
@@ -240,9 +240,9 @@ We provide a series of pre-trained weights for you to use.
 First of all, we provide weights after relational pre-training (RLIP weights) on VG+COCO+Objects365 using RLIPv2-ParSeDA.
 | Model | Pre-training Paradigm | Pre-training Dataset | Backbone | Download |
 | ---------- | :-----------: | :-----------: | :-----------: | :-----------: |
-| RLIPv2-ParSeDA | RLIP | VG+COCO+O365 | ResNet-50 | [Link]() |
-| RLIPv2-ParSeDA | RLIP | VG+COCO+O365 | Swin-T | [Link]() |
-| RLIPv2-ParSeDA | RLIP | VG+COCO+O365 | Swin-L | [Link]() |
+| RLIPv2-ParSeDA | RLIP | VG+COCO+O365 | ResNet-50 | [Link](https://zjueducn-my.sharepoint.com/:f:/g/personal/hj_yuan_zju_edu_cn/EgbbldWOvKtBrCe76O-k1W4BXqGWeDQ8OafAwzcmcC1AkA?e=ToafDD) |
+| RLIPv2-ParSeDA | RLIP | VG+COCO+O365 | Swin-T | [Link](https://zjueducn-my.sharepoint.com/:f:/g/personal/hj_yuan_zju_edu_cn/EgbbldWOvKtBrCe76O-k1W4BXqGWeDQ8OafAwzcmcC1AkA?e=ToafDD) |
+| RLIPv2-ParSeDA | RLIP | VG+COCO+O365 | Swin-L | [Link](https://zjueducn-my.sharepoint.com/:f:/g/personal/hj_yuan_zju_edu_cn/EgbbldWOvKtBrCe76O-k1W4BXqGWeDQ8OafAwzcmcC1AkA?e=ToafDD) |
 
 Secondly, we provide object detection weights (OD weights) on COCO+Objects365, used to initialize RLIPv2-ParSeDA for RLIP.
 | Model | Pre-training Paradigm | Pre-training Dataset | Backbone | Download |
@@ -282,13 +282,13 @@ For instance, `fine_tune_RLIP_ParSeDA_v2_hico_swinL_few-shot.sh` means that this
 ### Zero-shot on HICO-DET
 | Model | Backbone | Setting | Rare / Non-Rare / Full | Download |
 | ----- | :------: | :-----: | :--------------------: | :------: |
-| RLIPv2-ParSeDA | ResNet-50 | NF | 19.64 / 17.24 / 17.79 | [Link]() |
+| RLIPv2-ParSeDA | ResNet-50 | NF | 19.64 / 17.24 / 17.79 | [Link](https://zjueducn-my.sharepoint.com/:f:/g/personal/hj_yuan_zju_edu_cn/EgbbldWOvKtBrCe76O-k1W4BXqGWeDQ8OafAwzcmcC1AkA?e=ToafDD) |
 | RLIPv2-ParSeDA | ResNet-50 | UC-RF | 21.45 / 35.85 / 32.97 | [Link]() |
 | RLIPv2-ParSeDA | ResNet-50 | UC-NF | 22.81 / 29.52 / 28.18 | [Link]() |
-| RLIPv2-ParSeDA | Swin-T | NF | 21.24 / 19.47 / 19.87 | [Link]() |
+| RLIPv2-ParSeDA | Swin-T | NF | 21.24 / 19.47 / 19.87 | [Link](https://zjueducn-my.sharepoint.com/:f:/g/personal/hj_yuan_zju_edu_cn/EgbbldWOvKtBrCe76O-k1W4BXqGWeDQ8OafAwzcmcC1AkA?e=ToafDD) |
 | RLIPv2-ParSeDA | Swin-T | UC-RF | 26.95 / 39.92 / 37.32 | [Link]() |
 | RLIPv2-ParSeDA | Swin-T | UC-NF | 21.07 / 35.07 / 32.27 | [Link]() |
-| RLIPv2-ParSeDA | Swin-L | NF | 27.97 / 21.90 / 23.29 | [Link]() |
+| RLIPv2-ParSeDA | Swin-L | NF | 27.97 / 21.90 / 23.29 | [Link](https://zjueducn-my.sharepoint.com/:f:/g/personal/hj_yuan_zju_edu_cn/EgbbldWOvKtBrCe76O-k1W4BXqGWeDQ8OafAwzcmcC1AkA?e=ToafDD) |
 | RLIPv2-ParSeDA | Swin-L | UC-RF | 31.23 / 45.01 / 42.26 | [Link]() |
 | RLIPv2-ParSeDA | Swin-L | UC-NF | 22.65 / 40.51 / 36.94 | [Link]() |
 
