@@ -293,7 +293,7 @@ For instance, `fine_tune_RLIP_ParSeDA_v2_hico_swinL_few-shot.sh` means that this
 | RLIPv2-ParSeDA | Swin-L | UC-NF | 22.65 / 40.51 / 36.94 | [Link](https://zjueducn-my.sharepoint.com/:f:/g/personal/hj_yuan_zju_edu_cn/ErtD7IYM2gFKjCWrv4u-rHUBsG5Nc19Y3mBa6tr0tmmwIw?e=HcmDu5) |
 
 ### Fully fine-tuning on V-COCO
-| Model | Backbone | Rare / Non-Rare / Full | Download |
+| Model | Backbone | AP_1 / AP_2 | Download |
 | ----- | :------: | :--------------------: | :------: |
 | RLIPv2-ParSeDA | ResNet-50 | 65.9 / 68.0 | [Link](https://zjueducn-my.sharepoint.com/:f:/g/personal/hj_yuan_zju_edu_cn/Esu_hlTSWvxImjK1F6nIGvcB34u7Sx8C7UWThQ4mXKWc1g?e=wmM1cG) |
 | RLIPv2-ParSeDA | Swin-T | 68.8 / 70.8 | [Link](https://zjueducn-my.sharepoint.com/:f:/g/personal/hj_yuan_zju_edu_cn/Esu_hlTSWvxImjK1F6nIGvcB34u7Sx8C7UWThQ4mXKWc1g?e=wmM1cG) |
