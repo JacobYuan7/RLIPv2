@@ -42,7 +42,7 @@
 Note that if you can not get access to the links provided below, try using another browser or contact me by e-mail. 
 - [x] 🎉 Release code for pre-training, fine-tuning and inference.
 - [x] 🎉 Release pre-training and fine-tuning annotations. 
-- [ ] 🕘 Release checkpoints for pre-training, few-shot, zero-shot and fine-tuning.  
+- [x] 🎉 Release checkpoints for pre-training, few-shot, zero-shot and fine-tuning.  
 
 <!-- - [ ] 🕘 Include support for inference on custom images. -->
 
@@ -295,16 +295,16 @@ For instance, `fine_tune_RLIP_ParSeDA_v2_hico_swinL_few-shot.sh` means that this
 ### Fully fine-tuning on V-COCO
 | Model | Backbone | Rare / Non-Rare / Full | Download |
 | ----- | :------: | :--------------------: | :------: |
-| RLIPv2-ParSeDA | ResNet-50 | 65.9 / 68.0 | [Link]() |
-| RLIPv2-ParSeDA | Swin-T | 68.8 / 70.8 | [Link]() |
-| RLIPv2-ParSeDA | Swin-L | 72.1 / 74.1 | [Link]() |
+| RLIPv2-ParSeDA | ResNet-50 | 65.9 / 68.0 | [Link](https://zjueducn-my.sharepoint.com/:f:/g/personal/hj_yuan_zju_edu_cn/Esu_hlTSWvxImjK1F6nIGvcB34u7Sx8C7UWThQ4mXKWc1g?e=wmM1cG) |
+| RLIPv2-ParSeDA | Swin-T | 68.8 / 70.8 | [Link](https://zjueducn-my.sharepoint.com/:f:/g/personal/hj_yuan_zju_edu_cn/Esu_hlTSWvxImjK1F6nIGvcB34u7Sx8C7UWThQ4mXKWc1g?e=wmM1cG) |
+| RLIPv2-ParSeDA | Swin-L | 72.1 / 74.1 | [Link](https://zjueducn-my.sharepoint.com/:f:/g/personal/hj_yuan_zju_edu_cn/Esu_hlTSWvxImjK1F6nIGvcB34u7Sx8C7UWThQ4mXKWc1g?e=wmM1cG) |
 
 ### Fully fine-tuning on Open Images v6
 | Model | Backbone | R@50 / wmAP_rel / wmAP_phr / score_wtd | Download |
 | ----- | :------: | :------------------------------------: | :------: |
-| RLIPv2-ParSeDA | ResNet-50 | 65.99 / 49.54 / 45.71 / 51.30 | [Link]() |
-| RLIPv2-ParSeDA | Swin-T | 68.81 / 52.70 / 48.01 / 54.05 | [Link]() |
-| RLIPv2-ParSeDA | Swin-L | 72.49 / 56.38 / 50.70 / 57.34 | [Link]() |
+| RLIPv2-ParSeDA | ResNet-50 | 65.99 / 49.54 / 45.71 / 51.30 | [Link](https://zjueducn-my.sharepoint.com/:f:/g/personal/hj_yuan_zju_edu_cn/EiUNeq-X8shArB0vy1eMHT8BpWAJS_VKaof9ZKpWb55YQQ?e=bVV2XH) |
+| RLIPv2-ParSeDA | Swin-T | 68.81 / 52.70 / 48.01 / 54.05 | [Link](https://zjueducn-my.sharepoint.com/:f:/g/personal/hj_yuan_zju_edu_cn/EiUNeq-X8shArB0vy1eMHT8BpWAJS_VKaof9ZKpWb55YQQ?e=bVV2XH) |
+| RLIPv2-ParSeDA | Swin-L | 72.49 / 56.38 / 50.70 / 57.34 | [Link](https://zjueducn-my.sharepoint.com/:f:/g/personal/hj_yuan_zju_edu_cn/EiUNeq-X8shArB0vy1eMHT8BpWAJS_VKaof9ZKpWb55YQQ?e=bVV2XH) |
 
 
 ## Evaluation
