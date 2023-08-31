@@ -46,7 +46,6 @@ Note that if you can not get access to the links provided below, try using anoth
 
 <!-- - [ ] 🕘 Include support for inference on custom images. -->
 
-Allow me to upload all the files in the following days to come because it is time-consuming.
 
 ## Information before using this repo
 I changed all the paths to prevent from possible information leakage.
