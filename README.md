@@ -309,14 +309,15 @@ For instance, `fine_tune_RLIP_ParSeDA_v2_hico_swinL_few-shot.sh` means that this
 ## Evaluation
 The mAP on HICO-DET under the Full set, Rare set and Non-Rare Set will be reported during the training process.
 
-The results for the official evaluation of V-COCO must be obtained by the generated pickle file of detection results.
-```shell
+The results for the official evaluation of V-COCO must be obtained by the generated pickle file of detection results. You can refer to [test_vcoco_official.sh](https://github.com/JacobYuan7/RLIPv2/blob/main/scripts/RLIP_ParSeDA/test_vcoco_official.sh) for more details on running 
+`generate_vcoco_official.py`.
+<!-- ```shell
 cd /PATH/TO/RLIP
 python generate_vcoco_official.py \
         --param_path /PATH/TO/CHECKPOINT \
         --save_path vcoco.pickle \
         --hoi_path /PATH/TO/VCOCO/DATA \
-```
+``` -->
 Then you should run following codes after modifying the path to get the final performance:
 ```shell
 cd /PATH/TO/RLIP
