@@ -99,12 +99,12 @@ This repo contains the implementation of various methods to resolve HOI detectio
 ## Annotation preparation
 | Dataset | Setting | Download |
 | ---------- | :-----------:  | :-----------:  |
-| VG | RLIP | [Link](https://zjueducn-my.sharepoint.com/:u:/g/personal/hj_yuan_zju_edu_cn/EWEPvw_EEttNt4TNHABDWbgB0S4LBPzlxvPidh_MhEEUTQ?e=j9gBjk) |
-| COCO (pseudo) | RLIP | [Link](https://zjueducn-my.sharepoint.com/:u:/g/personal/hj_yuan_zju_edu_cn/EaFdi7gYbMVKtOfTbOPOfwoBX2AGwQf9818CUWqZ9uBjKA?e=gb9Ftm) |
-| Objects365 (pseudo) | RLIP | [Link](https://zjueducn-my.sharepoint.com/:u:/g/personal/hj_yuan_zju_edu_cn/EaFdi7gYbMVKtOfTbOPOfwoBX2AGwQf9818CUWqZ9uBjKA?e=gb9Ftm) |
-| Open Images | Fully-finetuning  | [Link](https://zjueducn-my.sharepoint.com/:u:/g/personal/hj_yuan_zju_edu_cn/EaFdi7gYbMVKtOfTbOPOfwoBX2AGwQf9818CUWqZ9uBjKA?e=gb9Ftm) |
-| HICO-DET | Few-shot 1%, 10% | [Link](https://zjueducn-my.sharepoint.com/:f:/g/personal/hj_yuan_zju_edu_cn/Eh7UufFbB_5Dutvr66g-t6sBn5wCeA0uzMwiy8mUxaD50g?e=IKB3SD) |
-| HICO-DET | Zero-shot (UC-NF, UC-RF)\* | [Link](https://zjueducn-my.sharepoint.com/:f:/g/personal/hj_yuan_zju_edu_cn/Ev9BzZxOlT5Mt04wOpIHA5kBP2eA6fijjweI_kh9WN3MUw?e=jMJmu6) |
+| VG | RLIP | [Link](https://1drv.ms/u/s!Areeng9FzbjiyE4ZsPNNhoIVDZnl?e=wUfANf) |
+| COCO (pseudo) | RLIP | [Link](https://1drv.ms/u/s!Areeng9FzbjiyAwOB1vh0TbAFLPV?e=b7pe7O) |
+| Objects365 (pseudo) | RLIP | [Link](https://1drv.ms/u/s!Areeng9FzbjiyAwOB1vh0TbAFLPV?e=b7pe7O) |
+| Open Images | Fully-finetuning  | [Link](https://1drv.ms/u/s!Areeng9FzbjiyAwOB1vh0TbAFLPV?e=b7pe7O) |
+| HICO-DET | Few-shot 1%, 10% | [Link](https://1drv.ms/f/s!Areeng9FzbjixEBRdVQ7sE8sIyiW?e=LtdYUB) |
+| HICO-DET | Zero-shot (UC-NF, UC-RF)\* | [Link](https://1drv.ms/f/s!Areeng9FzbjixEK_qV1cAwrLMW3A?e=QmX1Za) |
 
 Note: ① \* Zero-shot (NF) do not need any HICO-DET annotations for fine-tuning, so we only provide training annotations for the UC-NF and UC-RF setting.
 
