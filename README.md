@@ -239,19 +239,19 @@ We provide a series of pre-trained weights for you to use.
 First of all, we provide weights after relational pre-training (RLIP weights) on VG+COCO+Objects365 using RLIPv2-ParSeDA.
 | Model | Pre-training Paradigm | Pre-training Dataset | Backbone | Download |
 | ---------- | :-----------: | :-----------: | :-----------: | :-----------: |
-| RLIPv2-ParSeDA | RLIP | VG+COCO+O365 | ResNet-50 | [Link](https://zjueducn-my.sharepoint.com/:f:/g/personal/hj_yuan_zju_edu_cn/EgbbldWOvKtBrCe76O-k1W4BXqGWeDQ8OafAwzcmcC1AkA?e=ToafDD) |
-| RLIPv2-ParSeDA | RLIP | VG+COCO+O365 | Swin-T | [Link](https://zjueducn-my.sharepoint.com/:f:/g/personal/hj_yuan_zju_edu_cn/EgbbldWOvKtBrCe76O-k1W4BXqGWeDQ8OafAwzcmcC1AkA?e=ToafDD) |
-| RLIPv2-ParSeDA | RLIP | VG+COCO+O365 | Swin-L | [Link](https://zjueducn-my.sharepoint.com/:f:/g/personal/hj_yuan_zju_edu_cn/EgbbldWOvKtBrCe76O-k1W4BXqGWeDQ8OafAwzcmcC1AkA?e=ToafDD) |
+| RLIPv2-ParSeDA | RLIP | VG+COCO+O365 | ResNet-50 | [Link](https://1drv.ms/f/s!Areeng9FzbjixA-4QhhMWzWQw-Mb?e=1uAxp7) |
+| RLIPv2-ParSeDA | RLIP | VG+COCO+O365 | Swin-T | [Link](https://1drv.ms/f/s!Areeng9FzbjixA-4QhhMWzWQw-Mb?e=1uAxp7) |
+| RLIPv2-ParSeDA | RLIP | VG+COCO+O365 | Swin-L | [Link](https://1drv.ms/f/s!Areeng9FzbjixA-4QhhMWzWQw-Mb?e=1uAxp7) |
 
 Secondly, we provide object detection weights (OD weights) on COCO+Objects365, used to initialize RLIPv2-ParSeDA for RLIP.
 | Model | Pre-training Paradigm | Pre-training Dataset | Backbone | Download |
 | ---------- | :-----------: | :-----------: | :-----------: | :-----------: |
-| RLIPv2-ParSeDA | OD | COCO | ResNet-50 | [Link](https://zjueducn-my.sharepoint.com/:f:/g/personal/hj_yuan_zju_edu_cn/EnBvGtP9qQJGjoqwYKgzQ7MBpt_KmKUIvsblHjKkHR711g?e=nQ0J3a) |
-| RLIPv2-ParSeDA | OD | COCO+O365 | ResNet-50 | [Link](https://zjueducn-my.sharepoint.com/:f:/g/personal/hj_yuan_zju_edu_cn/EnBvGtP9qQJGjoqwYKgzQ7MBpt_KmKUIvsblHjKkHR711g?e=nQ0J3a) |
-| RLIPv2-ParSeDA | OD | COCO | Swin-T | [Link](https://zjueducn-my.sharepoint.com/:f:/g/personal/hj_yuan_zju_edu_cn/EnBvGtP9qQJGjoqwYKgzQ7MBpt_KmKUIvsblHjKkHR711g?e=nQ0J3a) |
-| RLIPv2-ParSeDA | OD | COCO+O365 | Swin-T | [Link](https://zjueducn-my.sharepoint.com/:f:/g/personal/hj_yuan_zju_edu_cn/EnBvGtP9qQJGjoqwYKgzQ7MBpt_KmKUIvsblHjKkHR711g?e=nQ0J3a) |
-| RLIPv2-ParSeDA | OD | COCO | Swin-L | [Link](https://zjueducn-my.sharepoint.com/:f:/g/personal/hj_yuan_zju_edu_cn/EnBvGtP9qQJGjoqwYKgzQ7MBpt_KmKUIvsblHjKkHR711g?e=nQ0J3a) |
-| RLIPv2-ParSeDA | OD | COCO+O365 | Swin-L | [Link](https://zjueducn-my.sharepoint.com/:f:/g/personal/hj_yuan_zju_edu_cn/EnBvGtP9qQJGjoqwYKgzQ7MBpt_KmKUIvsblHjKkHR711g?e=nQ0J3a) |
+| RLIPv2-ParSeDA | OD | COCO | ResNet-50 | [Link](https://1drv.ms/f/s!Areeng9FzbjixA1zcKioiaYVhvV4?e=imxrXW) |
+| RLIPv2-ParSeDA | OD | COCO+O365 | ResNet-50 | [Link](https://1drv.ms/f/s!Areeng9FzbjixA1zcKioiaYVhvV4?e=imxrXW) |
+| RLIPv2-ParSeDA | OD | COCO | Swin-T | [Link](https://1drv.ms/f/s!Areeng9FzbjixA1zcKioiaYVhvV4?e=imxrXW) |
+| RLIPv2-ParSeDA | OD | COCO+O365 | Swin-T | [Link](https://1drv.ms/f/s!Areeng9FzbjixA1zcKioiaYVhvV4?e=imxrXW) |
+| RLIPv2-ParSeDA | OD | COCO | Swin-L | [Link](https://1drv.ms/f/s!Areeng9FzbjixA1zcKioiaYVhvV4?e=imxrXW) |
+| RLIPv2-ParSeDA | OD | COCO+O365 | Swin-L | [Link](https://1drv.ms/f/s!Areeng9FzbjixA1zcKioiaYVhvV4?e=imxrXW) |
 
 Note that all the scripts used for pre-training RLIPv2 are presented under `scripts/RLIP_ParSeDA`.
 For instance, `train_RLIP_ParSeDA_v2_mixed_vgcocoo365_swinL.sh` means that this script is responsible for pre-training on mixed datasets of VG+COCO+O365 using Swin-L and RLIPv2-ParSeDA.
@@ -264,46 +264,46 @@ For instance, `fine_tune_RLIP_ParSeDA_v2_hico_swinL_few-shot.sh` means that this
 ### Fully fine-tuning on HICO-DET
 | Model | Backbone | Rare / Non-Rare / Full | Download |
 | ----- | :------: | :--------------------: | :------: |
-| RLIPv2-ParSeDA | ResNet-50 | 29.61 / 37.10 / 35.38 | [Link](https://zjueducn-my.sharepoint.com/:f:/g/personal/hj_yuan_zju_edu_cn/EjLxG-V3rz9Nham6vrinbl0BfGbq_Bmeqdrg_wQgoiIgIA?e=HDa3Oq) |
-| RLIPv2-ParSeDA | Swin-T | 33.66 / 40.07 / 38.60 | [Link](https://zjueducn-my.sharepoint.com/:f:/g/personal/hj_yuan_zju_edu_cn/EjLxG-V3rz9Nham6vrinbl0BfGbq_Bmeqdrg_wQgoiIgIA?e=HDa3Oq) |
-| RLIPv2-ParSeDA | Swin-L | 43.23 / 45.64 / 45.09 | [Link](https://zjueducn-my.sharepoint.com/:f:/g/personal/hj_yuan_zju_edu_cn/EjLxG-V3rz9Nham6vrinbl0BfGbq_Bmeqdrg_wQgoiIgIA?e=HDa3Oq) |
+| RLIPv2-ParSeDA | ResNet-50 | 29.61 / 37.10 / 35.38 | [Link](https://1drv.ms/f/s!Areeng9Fzbjiw1AZ_s4PJDBEmceO?e=cBeJRl) |
+| RLIPv2-ParSeDA | Swin-T | 33.66 / 40.07 / 38.60 | [Link](https://1drv.ms/f/s!Areeng9Fzbjiw1AZ_s4PJDBEmceO?e=cBeJRl) |
+| RLIPv2-ParSeDA | Swin-L | 43.23 / 45.64 / 45.09 | [Link](https://1drv.ms/f/s!Areeng9Fzbjiw1AZ_s4PJDBEmceO?e=cBeJRl) |
 
 ### Few-shot transfer on HICO-DET
 | Model | Backbone | Setting | Rare / Non-Rare / Full | Download |
 | ----- | :------: | :-----: | :--------------------: | :------: |
-| RLIPv2-ParSeDA | ResNet-50 | 1% | 22.13 / 24.51 / 23.96 | [Link](https://zjueducn-my.sharepoint.com/:f:/g/personal/hj_yuan_zju_edu_cn/EhgG-qxsFtBPqDri7iMvejoBa6pxlzmHsnuIFmgKPG96ow?e=YaVUzq) |
-| RLIPv2-ParSeDA | ResNet-50 | 10% | 23.28 / 30.02 / 28.46 | [Link](https://zjueducn-my.sharepoint.com/:f:/g/personal/hj_yuan_zju_edu_cn/EhgG-qxsFtBPqDri7iMvejoBa6pxlzmHsnuIFmgKPG96ow?e=YaVUzq) |
-| RLIPv2-ParSeDA | Swin-T | 1% | 24.26 / 28.92 / 27.85 | [Link](https://zjueducn-my.sharepoint.com/:f:/g/personal/hj_yuan_zju_edu_cn/EhgG-qxsFtBPqDri7iMvejoBa6pxlzmHsnuIFmgKPG96ow?e=YaVUzq) |
-| RLIPv2-ParSeDA | Swin-T | 10% | 28.31 / 32.93 / 31.87 | [Link](https://zjueducn-my.sharepoint.com/:f:/g/personal/hj_yuan_zju_edu_cn/EhgG-qxsFtBPqDri7iMvejoBa6pxlzmHsnuIFmgKPG96ow?e=YaVUzq) |
-| RLIPv2-ParSeDA | Swin-L | 1% | 31.89 / 32.32 / 32.22 | [Link](https://zjueducn-my.sharepoint.com/:f:/g/personal/hj_yuan_zju_edu_cn/EhgG-qxsFtBPqDri7iMvejoBa6pxlzmHsnuIFmgKPG96ow?e=YaVUzq) |
-| RLIPv2-ParSeDA | Swin-L | 10% | 34.75 / 38.27 / 37.46 | [Link](https://zjueducn-my.sharepoint.com/:f:/g/personal/hj_yuan_zju_edu_cn/EhgG-qxsFtBPqDri7iMvejoBa6pxlzmHsnuIFmgKPG96ow?e=YaVUzq) |
+| RLIPv2-ParSeDA | ResNet-50 | 1% | 22.13 / 24.51 / 23.96 | [Link](https://1drv.ms/f/s!Areeng9Fzbjiw08xUlwoRTmXCfu8?e=wilesB) |
+| RLIPv2-ParSeDA | ResNet-50 | 10% | 23.28 / 30.02 / 28.46 | [Link](https://1drv.ms/f/s!Areeng9Fzbjiw08xUlwoRTmXCfu8?e=wilesB) |
+| RLIPv2-ParSeDA | Swin-T | 1% | 24.26 / 28.92 / 27.85 | [Link](https://1drv.ms/f/s!Areeng9Fzbjiw08xUlwoRTmXCfu8?e=wilesB) |
+| RLIPv2-ParSeDA | Swin-T | 10% | 28.31 / 32.93 / 31.87 | [Link](https://1drv.ms/f/s!Areeng9Fzbjiw08xUlwoRTmXCfu8?e=wilesB) |
+| RLIPv2-ParSeDA | Swin-L | 1% | 31.89 / 32.32 / 32.22 | [Link](https://1drv.ms/f/s!Areeng9Fzbjiw08xUlwoRTmXCfu8?e=wilesB) |
+| RLIPv2-ParSeDA | Swin-L | 10% | 34.75 / 38.27 / 37.46 | [Link](https://1drv.ms/f/s!Areeng9Fzbjiw08xUlwoRTmXCfu8?e=wilesB) |
 
 ### Zero-shot on HICO-DET
 | Model | Backbone | Setting | Rare / Non-Rare / Full | Download |
 | ----- | :------: | :-----: | :--------------------: | :------: |
-| RLIPv2-ParSeDA | ResNet-50 | NF | 19.64 / 17.24 / 17.79 | [Link](https://zjueducn-my.sharepoint.com/:f:/g/personal/hj_yuan_zju_edu_cn/EgbbldWOvKtBrCe76O-k1W4BXqGWeDQ8OafAwzcmcC1AkA?e=ToafDD) |
-| RLIPv2-ParSeDA | ResNet-50 | UC-RF | 21.45 / 35.85 / 32.97 | [Link](https://zjueducn-my.sharepoint.com/:f:/g/personal/hj_yuan_zju_edu_cn/ErtD7IYM2gFKjCWrv4u-rHUBsG5Nc19Y3mBa6tr0tmmwIw?e=HcmDu5) |
-| RLIPv2-ParSeDA | ResNet-50 | UC-NF | 22.81 / 29.52 / 28.18 | [Link](https://zjueducn-my.sharepoint.com/:f:/g/personal/hj_yuan_zju_edu_cn/ErtD7IYM2gFKjCWrv4u-rHUBsG5Nc19Y3mBa6tr0tmmwIw?e=HcmDu5) |
-| RLIPv2-ParSeDA | Swin-T | NF | 21.24 / 19.47 / 19.87 | [Link](https://zjueducn-my.sharepoint.com/:f:/g/personal/hj_yuan_zju_edu_cn/EgbbldWOvKtBrCe76O-k1W4BXqGWeDQ8OafAwzcmcC1AkA?e=ToafDD) |
-| RLIPv2-ParSeDA | Swin-T | UC-RF | 26.95 / 39.92 / 37.32 | [Link](https://zjueducn-my.sharepoint.com/:f:/g/personal/hj_yuan_zju_edu_cn/ErtD7IYM2gFKjCWrv4u-rHUBsG5Nc19Y3mBa6tr0tmmwIw?e=HcmDu5) |
-| RLIPv2-ParSeDA | Swin-T | UC-NF | 21.07 / 35.07 / 32.27 | [Link](https://zjueducn-my.sharepoint.com/:f:/g/personal/hj_yuan_zju_edu_cn/ErtD7IYM2gFKjCWrv4u-rHUBsG5Nc19Y3mBa6tr0tmmwIw?e=HcmDu5) |
-| RLIPv2-ParSeDA | Swin-L | NF | 27.97 / 21.90 / 23.29 | [Link](https://zjueducn-my.sharepoint.com/:f:/g/personal/hj_yuan_zju_edu_cn/EgbbldWOvKtBrCe76O-k1W4BXqGWeDQ8OafAwzcmcC1AkA?e=ToafDD) |
-| RLIPv2-ParSeDA | Swin-L | UC-RF | 31.23 / 45.01 / 42.26 | [Link](https://zjueducn-my.sharepoint.com/:f:/g/personal/hj_yuan_zju_edu_cn/ErtD7IYM2gFKjCWrv4u-rHUBsG5Nc19Y3mBa6tr0tmmwIw?e=HcmDu5) |
-| RLIPv2-ParSeDA | Swin-L | UC-NF | 22.65 / 40.51 / 36.94 | [Link](https://zjueducn-my.sharepoint.com/:f:/g/personal/hj_yuan_zju_edu_cn/ErtD7IYM2gFKjCWrv4u-rHUBsG5Nc19Y3mBa6tr0tmmwIw?e=HcmDu5) |
+| RLIPv2-ParSeDA | ResNet-50 | NF | 19.64 / 17.24 / 17.79 | [Link](https://1drv.ms/f/s!Areeng9FzbjixA-4QhhMWzWQw-Mb?e=1uAxp7) |
+| RLIPv2-ParSeDA | ResNet-50 | UC-RF | 21.45 / 35.85 / 32.97 | [Link](https://1drv.ms/f/s!Areeng9Fzbjiw1Zs3bHxykLj-GlV?e=W03Jai) |
+| RLIPv2-ParSeDA | ResNet-50 | UC-NF | 22.81 / 29.52 / 28.18 | [Link](https://1drv.ms/f/s!Areeng9Fzbjiw1Zs3bHxykLj-GlV?e=W03Jai) |
+| RLIPv2-ParSeDA | Swin-T | NF | 21.24 / 19.47 / 19.87 | [Link](https://1drv.ms/f/s!Areeng9FzbjixA-4QhhMWzWQw-Mb?e=1uAxp7) |
+| RLIPv2-ParSeDA | Swin-T | UC-RF | 26.95 / 39.92 / 37.32 | [Link](https://1drv.ms/f/s!Areeng9Fzbjiw1Zs3bHxykLj-GlV?e=W03Jai) |
+| RLIPv2-ParSeDA | Swin-T | UC-NF | 21.07 / 35.07 / 32.27 | [Link](https://1drv.ms/f/s!Areeng9Fzbjiw1Zs3bHxykLj-GlV?e=W03Jai) |
+| RLIPv2-ParSeDA | Swin-L | NF | 27.97 / 21.90 / 23.29 | [Link](https://1drv.ms/f/s!Areeng9FzbjixA-4QhhMWzWQw-Mb?e=1uAxp7) |
+| RLIPv2-ParSeDA | Swin-L | UC-RF | 31.23 / 45.01 / 42.26 | [Link](https://1drv.ms/f/s!Areeng9Fzbjiw1Zs3bHxykLj-GlV?e=W03Jai) |
+| RLIPv2-ParSeDA | Swin-L | UC-NF | 22.65 / 40.51 / 36.94 | [Link](https://1drv.ms/f/s!Areeng9Fzbjiw1Zs3bHxykLj-GlV?e=W03Jai) |
 
 ### Fully fine-tuning on V-COCO
 | Model | Backbone | AP_1 / AP_2 | Download |
 | ----- | :------: | :--------------------: | :------: |
-| RLIPv2-ParSeDA | ResNet-50 | 65.9 / 68.0 | [Link](https://zjueducn-my.sharepoint.com/:f:/g/personal/hj_yuan_zju_edu_cn/Esu_hlTSWvxImjK1F6nIGvcB34u7Sx8C7UWThQ4mXKWc1g?e=wmM1cG) |
-| RLIPv2-ParSeDA | Swin-T | 68.8 / 70.8 | [Link](https://zjueducn-my.sharepoint.com/:f:/g/personal/hj_yuan_zju_edu_cn/Esu_hlTSWvxImjK1F6nIGvcB34u7Sx8C7UWThQ4mXKWc1g?e=wmM1cG) |
-| RLIPv2-ParSeDA | Swin-L | 72.1 / 74.1 | [Link](https://zjueducn-my.sharepoint.com/:f:/g/personal/hj_yuan_zju_edu_cn/Esu_hlTSWvxImjK1F6nIGvcB34u7Sx8C7UWThQ4mXKWc1g?e=wmM1cG) |
+| RLIPv2-ParSeDA | ResNet-50 | 65.9 / 68.0 | [Link](https://1drv.ms/f/s!Areeng9Fzbjiw1LIv_ICZPskdxaD?e=dgmA48) |
+| RLIPv2-ParSeDA | Swin-T | 68.8 / 70.8 | [Link](https://1drv.ms/f/s!Areeng9Fzbjiw1LIv_ICZPskdxaD?e=dgmA48) |
+| RLIPv2-ParSeDA | Swin-L | 72.1 / 74.1 | [Link](https://1drv.ms/f/s!Areeng9Fzbjiw1LIv_ICZPskdxaD?e=dgmA48) |
 
 ### Fully fine-tuning on Open Images v6
 | Model | Backbone | R@50 / wmAP_rel / wmAP_phr / score_wtd | Download |
 | ----- | :------: | :------------------------------------: | :------: |
-| RLIPv2-ParSeDA | ResNet-50 | 65.99 / 49.54 / 45.71 / 51.30 | [Link](https://zjueducn-my.sharepoint.com/:f:/g/personal/hj_yuan_zju_edu_cn/EiUNeq-X8shArB0vy1eMHT8BpWAJS_VKaof9ZKpWb55YQQ?e=bVV2XH) |
-| RLIPv2-ParSeDA | Swin-T | 68.81 / 52.70 / 48.01 / 54.05 | [Link](https://zjueducn-my.sharepoint.com/:f:/g/personal/hj_yuan_zju_edu_cn/EiUNeq-X8shArB0vy1eMHT8BpWAJS_VKaof9ZKpWb55YQQ?e=bVV2XH) |
-| RLIPv2-ParSeDA | Swin-L | 72.49 / 56.38 / 50.70 / 57.34 | [Link](https://zjueducn-my.sharepoint.com/:f:/g/personal/hj_yuan_zju_edu_cn/EiUNeq-X8shArB0vy1eMHT8BpWAJS_VKaof9ZKpWb55YQQ?e=bVV2XH) |
+| RLIPv2-ParSeDA | ResNet-50 | 65.99 / 49.54 / 45.71 / 51.30 | [Link](https://1drv.ms/f/s!Areeng9Fzbjiw1FgKUAHqiueeeFH?e=Qb7cWb) |
+| RLIPv2-ParSeDA | Swin-T | 68.81 / 52.70 / 48.01 / 54.05 | [Link](https://1drv.ms/f/s!Areeng9Fzbjiw1FgKUAHqiueeeFH?e=Qb7cWb) |
+| RLIPv2-ParSeDA | Swin-L | 72.49 / 56.38 / 50.70 / 57.34 | [Link](https://1drv.ms/f/s!Areeng9Fzbjiw1FgKUAHqiueeeFH?e=Qb7cWb) |
 
 
 ## Evaluation
