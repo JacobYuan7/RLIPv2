@@ -295,9 +295,11 @@ For instance, `fine_tune_RLIP_ParSeDA_v2_hico_swinL_few-shot.sh` means that this
 ### Fully fine-tuning on V-COCO
 | Model | Backbone | AP_1 / AP_2 | Download |
 | ----- | :------: | :--------------------: | :------: |
-| RLIPv2-ParSeDA | ResNet-50 | 65.9 / 68.0 | [Link](https://1drv.ms/f/s!Areeng9Fzbjiw1LIv_ICZPskdxaD?e=dgmA48) |
-| RLIPv2-ParSeDA | Swin-T | 68.8 / 70.8 | [Link](https://1drv.ms/f/s!Areeng9Fzbjiw1LIv_ICZPskdxaD?e=dgmA48) |
-| RLIPv2-ParSeDA | Swin-L | 72.1 / 74.1 | [Link](https://1drv.ms/f/s!Areeng9Fzbjiw1LIv_ICZPskdxaD?e=dgmA48) |
+| RLIPv2-ParSeDA | ResNet-50 | 65.9 / 68.0 | [Link](https://1drv.ms/f/c/e2b8cd450f9e9eb7/Qreeng9FzbgggOLSIQAAAAAAyL_yAmT7JHcWgw) |
+| RLIPv2-ParSeDA | Swin-T | 68.8 / 70.8 | [Link](https://1drv.ms/f/c/e2b8cd450f9e9eb7/Qreeng9FzbgggOLSIQAAAAAAyL_yAmT7JHcWgw) |
+| RLIPv2-ParSeDA | Swin-L | 72.1 / 74.1 | [Link](https://1drv.ms/f/c/e2b8cd450f9e9eb7/Qreeng9FzbgggOLSIQAAAAAAyL_yAmT7JHcWgw) |
+
+
 
 ### Fully fine-tuning on Open Images v6
 | Model | Backbone | R@50 / wmAP_rel / wmAP_phr / score_wtd | Download |
