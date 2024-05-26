@@ -99,12 +99,12 @@ This repo contains the implementation of various methods to resolve HOI detectio
 ## Annotation preparation
 | Dataset | Setting | Download |
 | ---------- | :-----------:  | :-----------:  |
-| VG | RLIP | [Link](https://1drv.ms/u/s!Areeng9FzbjiyE4ZsPNNhoIVDZnl?e=wUfANf) |
+| VG | RLIP | [Link](https://1drv.ms/u/c/e2b8cd450f9e9eb7/Qbeeng9FzbgggOJOJAAAAAAAGbDzTYaCFQ2Z5Q) |
 | COCO (pseudo) | RLIP | [Link](https://1drv.ms/u/c/e2b8cd450f9e9eb7/Ebeeng9FzbgggOIMJAAAAAABSSme69DgBgxkoZj-u1xqkg) |
 | Objects365 (pseudo) | RLIP | [Link](https://1drv.ms/u/c/e2b8cd450f9e9eb7/Ebeeng9FzbgggOIMJAAAAAABSSme69DgBgxkoZj-u1xqkg) |
 | Open Images | Fully-finetuning  | [Link](https://1drv.ms/u/c/e2b8cd450f9e9eb7/Ebeeng9FzbgggOIMJAAAAAABSSme69DgBgxkoZj-u1xqkg) |
-| HICO-DET | Few-shot 1%, 10% | [Link](https://1drv.ms/f/s!Areeng9FzbjixEBRdVQ7sE8sIyiW?e=LtdYUB) |
-| HICO-DET | Zero-shot (UC-NF, UC-RF)\* | [Link](https://1drv.ms/f/s!Areeng9FzbjixEK_qV1cAwrLMW3A?e=QmX1Za) |
+| HICO-DET | Few-shot 1%, 10% | [Link](https://1drv.ms/f/c/e2b8cd450f9e9eb7/Qreeng9FzbgggOJAIgAAAAAAUXVUO7BPLCMolg) |
+| HICO-DET | Zero-shot (UC-NF, UC-RF)\* | [Link](https://1drv.ms/f/c/e2b8cd450f9e9eb7/Qreeng9FzbgggOJCIgAAAAAAv6ldXAMKyzFtwA) |
 
 
 Note: ① \* Zero-shot (NF) do not need any HICO-DET annotations for fine-tuning, so we only provide training annotations for the UC-NF and UC-RF setting.
