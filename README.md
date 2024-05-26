@@ -282,13 +282,13 @@ For instance, `fine_tune_RLIP_ParSeDA_v2_hico_swinL_few-shot.sh` means that this
 ### Zero-shot on HICO-DET
 | Model | Backbone | Setting | Rare / Non-Rare / Full | Download |
 | ----- | :------: | :-----: | :--------------------: | :------: |
-| RLIPv2-ParSeDA | ResNet-50 | NF | 19.64 / 17.24 / 17.79 | [Link](https://1drv.ms/f/s!Areeng9FzbjixA-4QhhMWzWQw-Mb?e=1uAxp7) |
+| RLIPv2-ParSeDA | ResNet-50 | NF | 19.64 / 17.24 / 17.79 | [Link](https://1drv.ms/f/c/e2b8cd450f9e9eb7/Qreeng9FzbgggOIPIgAAAAAAuEIYTFs1kMPjGw) |
 | RLIPv2-ParSeDA | ResNet-50 | UC-RF | 21.45 / 35.85 / 32.97 | [Link](https://1drv.ms/f/c/e2b8cd450f9e9eb7/Qreeng9FzbgggOLWIQAAAAAAbN2x8cpC4_hpVQ) |
 | RLIPv2-ParSeDA | ResNet-50 | UC-NF | 22.81 / 29.52 / 28.18 | [Link](https://1drv.ms/f/c/e2b8cd450f9e9eb7/Qreeng9FzbgggOLWIQAAAAAAbN2x8cpC4_hpVQ) |
-| RLIPv2-ParSeDA | Swin-T | NF | 21.24 / 19.47 / 19.87 | [Link](https://1drv.ms/f/s!Areeng9FzbjixA-4QhhMWzWQw-Mb?e=1uAxp7) |
+| RLIPv2-ParSeDA | Swin-T | NF | 21.24 / 19.47 / 19.87 | [Link](https://1drv.ms/f/c/e2b8cd450f9e9eb7/Qreeng9FzbgggOIPIgAAAAAAuEIYTFs1kMPjGw) |
 | RLIPv2-ParSeDA | Swin-T | UC-RF | 26.95 / 39.92 / 37.32 | [Link](https://1drv.ms/f/c/e2b8cd450f9e9eb7/Qreeng9FzbgggOLWIQAAAAAAbN2x8cpC4_hpVQ) |
 | RLIPv2-ParSeDA | Swin-T | UC-NF | 21.07 / 35.07 / 32.27 | [Link](https://1drv.ms/f/c/e2b8cd450f9e9eb7/Qreeng9FzbgggOLWIQAAAAAAbN2x8cpC4_hpVQ) |
-| RLIPv2-ParSeDA | Swin-L | NF | 27.97 / 21.90 / 23.29 | [Link](https://1drv.ms/f/s!Areeng9FzbjixA-4QhhMWzWQw-Mb?e=1uAxp7) |
+| RLIPv2-ParSeDA | Swin-L | NF | 27.97 / 21.90 / 23.29 | [Link](https://1drv.ms/f/c/e2b8cd450f9e9eb7/Qreeng9FzbgggOIPIgAAAAAAuEIYTFs1kMPjGw) |
 | RLIPv2-ParSeDA | Swin-L | UC-RF | 31.23 / 45.01 / 42.26 | [Link](https://1drv.ms/f/c/e2b8cd450f9e9eb7/Qreeng9FzbgggOLWIQAAAAAAbN2x8cpC4_hpVQ) |
 | RLIPv2-ParSeDA | Swin-L | UC-NF | 22.65 / 40.51 / 36.94 | [Link](https://1drv.ms/f/c/e2b8cd450f9e9eb7/Qreeng9FzbgggOLWIQAAAAAAbN2x8cpC4_hpVQ) |
 
@@ -304,9 +304,9 @@ For instance, `fine_tune_RLIP_ParSeDA_v2_hico_swinL_few-shot.sh` means that this
 ### Fully fine-tuning on Open Images v6
 | Model | Backbone | R@50 / wmAP_rel / wmAP_phr / score_wtd | Download |
 | ----- | :------: | :------------------------------------: | :------: |
-| RLIPv2-ParSeDA | ResNet-50 | 65.99 / 49.54 / 45.71 / 51.30 | [Link](https://1drv.ms/f/s!Areeng9Fzbjiw1FgKUAHqiueeeFH?e=Qb7cWb) |
-| RLIPv2-ParSeDA | Swin-T | 68.81 / 52.70 / 48.01 / 54.05 | [Link](https://1drv.ms/f/s!Areeng9Fzbjiw1FgKUAHqiueeeFH?e=Qb7cWb) |
-| RLIPv2-ParSeDA | Swin-L | 72.49 / 56.38 / 50.70 / 57.34 | [Link](https://1drv.ms/f/s!Areeng9Fzbjiw1FgKUAHqiueeeFH?e=Qb7cWb) |
+| RLIPv2-ParSeDA | ResNet-50 | 65.99 / 49.54 / 45.71 / 51.30 | [Link](https://1drv.ms/f/c/e2b8cd450f9e9eb7/Qreeng9FzbgggOLRIQAAAAAAYClAB6ornnnhRw) |
+| RLIPv2-ParSeDA | Swin-T | 68.81 / 52.70 / 48.01 / 54.05 | [Link](https://1drv.ms/f/c/e2b8cd450f9e9eb7/Qreeng9FzbgggOLRIQAAAAAAYClAB6ornnnhRw) |
+| RLIPv2-ParSeDA | Swin-L | 72.49 / 56.38 / 50.70 / 57.34 | [Link](https://1drv.ms/f/c/e2b8cd450f9e9eb7/Qreeng9FzbgggOLRIQAAAAAAYClAB6ornnnhRw) |
 
 
 ## Evaluation
