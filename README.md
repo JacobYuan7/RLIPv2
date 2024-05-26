@@ -113,7 +113,7 @@ Note: ① \* Zero-shot (NF) do not need any HICO-DET annotations for fine-tuning
 ## Pre-training datasets preparation
 
 ### 1. Visual Genome
-Firstly, we could download VG dataset from the [official link](https://visualgenome.org/api/v0/api_home.html), inclduing images Part I and Part II. (**Note: If the official website is not working, you can use the link that I provide: [Images](https://1drv.ms/u/s!Areeng9FzbjiyHQu_6NbSmsQf81D?e=BgMdXE) and [Images2](https://1drv.ms/u/s!Areeng9FzbjiyGUtQ8gfA7VVMvVp?e=aRzQeR).**) The annotations after pre-processing could be downloaded from the link above, which is used for pre-training. Note that this is generated from `scene_graphs.json` file by several pre-processing steps to remove redundant triplets. Also, several settings mentioned below also need the annotations that we provide. VG dataset and its corresponding annotations should be organized as follows:
+Firstly, we could download VG dataset from the [official link](https://visualgenome.org/api/v0/api_home.html), inclduing images Part I and Part II. (**Note: If the official website is not working, you can use the link that I provide: [Images](https://1drv.ms/u/c/e2b8cd450f9e9eb7/Qbeeng9FzbgggOJ0JAAAAAAALv-jW0prEH_NQw) and [Images2](https://1drv.ms/u/c/e2b8cd450f9e9eb7/Qbeeng9FzbgggOJlJAAAAAAALUPIHwO1VTL1aQ).**) The annotations after pre-processing could be downloaded from the link above, which is used for pre-training. Note that this is generated from `scene_graphs.json` file by several pre-processing steps to remove redundant triplets. Also, several settings mentioned below also need the annotations that we provide. VG dataset and its corresponding annotations should be organized as follows:
 ```
 VG
  |─ annotations
@@ -240,19 +240,19 @@ We provide a series of pre-trained weights for you to use.
 First of all, we provide weights after relational pre-training (RLIP weights) on VG+COCO+Objects365 using RLIPv2-ParSeDA.
 | Model | Pre-training Paradigm | Pre-training Dataset | Backbone | Download |
 | ---------- | :-----------: | :-----------: | :-----------: | :-----------: |
-| RLIPv2-ParSeDA | RLIP | VG+COCO+O365 | ResNet-50 | [Link](https://1drv.ms/f/s!Areeng9FzbjixA-4QhhMWzWQw-Mb?e=1uAxp7) |
-| RLIPv2-ParSeDA | RLIP | VG+COCO+O365 | Swin-T | [Link](https://1drv.ms/f/s!Areeng9FzbjixA-4QhhMWzWQw-Mb?e=1uAxp7) |
-| RLIPv2-ParSeDA | RLIP | VG+COCO+O365 | Swin-L | [Link](https://1drv.ms/f/s!Areeng9FzbjixA-4QhhMWzWQw-Mb?e=1uAxp7) |
+| RLIPv2-ParSeDA | RLIP | VG+COCO+O365 | ResNet-50 | [Link](https://1drv.ms/f/c/e2b8cd450f9e9eb7/Qreeng9FzbgggOIPIgAAAAAAuEIYTFs1kMPjGw) |
+| RLIPv2-ParSeDA | RLIP | VG+COCO+O365 | Swin-T | [Link](https://1drv.ms/f/c/e2b8cd450f9e9eb7/Qreeng9FzbgggOIPIgAAAAAAuEIYTFs1kMPjGw) |
+| RLIPv2-ParSeDA | RLIP | VG+COCO+O365 | Swin-L | [Link](https://1drv.ms/f/c/e2b8cd450f9e9eb7/Qreeng9FzbgggOIPIgAAAAAAuEIYTFs1kMPjGw) |
 
 Secondly, we provide object detection weights (OD weights) on COCO+Objects365, used to initialize RLIPv2-ParSeDA for RLIP.
 | Model | Pre-training Paradigm | Pre-training Dataset | Backbone | Download |
 | ---------- | :-----------: | :-----------: | :-----------: | :-----------: |
-| RLIPv2-ParSeDA | OD | COCO | ResNet-50 | [Link](https://1drv.ms/f/s!Areeng9FzbjixA1zcKioiaYVhvV4?e=imxrXW) |
-| RLIPv2-ParSeDA | OD | COCO+O365 | ResNet-50 | [Link](https://1drv.ms/f/s!Areeng9FzbjixA1zcKioiaYVhvV4?e=imxrXW) |
-| RLIPv2-ParSeDA | OD | COCO | Swin-T | [Link](https://1drv.ms/f/s!Areeng9FzbjixA1zcKioiaYVhvV4?e=imxrXW) |
-| RLIPv2-ParSeDA | OD | COCO+O365 | Swin-T | [Link](https://1drv.ms/f/s!Areeng9FzbjixA1zcKioiaYVhvV4?e=imxrXW) |
-| RLIPv2-ParSeDA | OD | COCO | Swin-L | [Link](https://1drv.ms/f/s!Areeng9FzbjixA1zcKioiaYVhvV4?e=imxrXW) |
-| RLIPv2-ParSeDA | OD | COCO+O365 | Swin-L | [Link](https://1drv.ms/f/s!Areeng9FzbjixA1zcKioiaYVhvV4?e=imxrXW) |
+| RLIPv2-ParSeDA | OD | COCO | ResNet-50 | [Link](https://1drv.ms/f/c/e2b8cd450f9e9eb7/Qreeng9FzbgggOINIgAAAAAAc3CoqImmFYb1eA) |
+| RLIPv2-ParSeDA | OD | COCO+O365 | ResNet-50 | [Link](https://1drv.ms/f/c/e2b8cd450f9e9eb7/Qreeng9FzbgggOINIgAAAAAAc3CoqImmFYb1eA) |
+| RLIPv2-ParSeDA | OD | COCO | Swin-T | [Link](https://1drv.ms/f/c/e2b8cd450f9e9eb7/Qreeng9FzbgggOINIgAAAAAAc3CoqImmFYb1eA) |
+| RLIPv2-ParSeDA | OD | COCO+O365 | Swin-T | [Link](https://1drv.ms/f/c/e2b8cd450f9e9eb7/Qreeng9FzbgggOINIgAAAAAAc3CoqImmFYb1eA) |
+| RLIPv2-ParSeDA | OD | COCO | Swin-L | [Link](https://1drv.ms/f/c/e2b8cd450f9e9eb7/Qreeng9FzbgggOINIgAAAAAAc3CoqImmFYb1eA) |
+| RLIPv2-ParSeDA | OD | COCO+O365 | Swin-L | [Link](https://1drv.ms/f/c/e2b8cd450f9e9eb7/Qreeng9FzbgggOINIgAAAAAAc3CoqImmFYb1eA) |
 
 Note that all the scripts used for pre-training RLIPv2 are presented under `scripts/RLIP_ParSeDA`.
 For instance, `train_RLIP_ParSeDA_v2_mixed_vgcocoo365_swinL.sh` means that this script is responsible for pre-training on mixed datasets of VG+COCO+O365 using Swin-L and RLIPv2-ParSeDA.
@@ -265,32 +265,32 @@ For instance, `fine_tune_RLIP_ParSeDA_v2_hico_swinL_few-shot.sh` means that this
 ### Fully fine-tuning on HICO-DET
 | Model | Backbone | Rare / Non-Rare / Full | Download |
 | ----- | :------: | :--------------------: | :------: |
-| RLIPv2-ParSeDA | ResNet-50 | 29.61 / 37.10 / 35.38 | [Link](https://1drv.ms/f/s!Areeng9Fzbjiw1AZ_s4PJDBEmceO?e=cBeJRl) |
-| RLIPv2-ParSeDA | Swin-T | 33.66 / 40.07 / 38.60 | [Link](https://1drv.ms/f/s!Areeng9Fzbjiw1AZ_s4PJDBEmceO?e=cBeJRl) |
-| RLIPv2-ParSeDA | Swin-L | 43.23 / 45.64 / 45.09 | [Link](https://1drv.ms/f/s!Areeng9Fzbjiw1AZ_s4PJDBEmceO?e=cBeJRl) |
+| RLIPv2-ParSeDA | ResNet-50 | 29.61 / 37.10 / 35.38 | [Link](https://1drv.ms/f/c/e2b8cd450f9e9eb7/Qreeng9FzbgggOLQIQAAAAAAGf7ODyQwRJnHjg) |
+| RLIPv2-ParSeDA | Swin-T | 33.66 / 40.07 / 38.60 | [Link](https://1drv.ms/f/c/e2b8cd450f9e9eb7/Qreeng9FzbgggOLQIQAAAAAAGf7ODyQwRJnHjg) |
+| RLIPv2-ParSeDA | Swin-L | 43.23 / 45.64 / 45.09 | [Link](https://1drv.ms/f/c/e2b8cd450f9e9eb7/Qreeng9FzbgggOLQIQAAAAAAGf7ODyQwRJnHjg) |
 
 ### Few-shot transfer on HICO-DET
 | Model | Backbone | Setting | Rare / Non-Rare / Full | Download |
 | ----- | :------: | :-----: | :--------------------: | :------: |
-| RLIPv2-ParSeDA | ResNet-50 | 1% | 22.13 / 24.51 / 23.96 | [Link](https://1drv.ms/f/s!Areeng9Fzbjiw08xUlwoRTmXCfu8?e=wilesB) |
-| RLIPv2-ParSeDA | ResNet-50 | 10% | 23.28 / 30.02 / 28.46 | [Link](https://1drv.ms/f/s!Areeng9Fzbjiw08xUlwoRTmXCfu8?e=wilesB) |
-| RLIPv2-ParSeDA | Swin-T | 1% | 24.26 / 28.92 / 27.85 | [Link](https://1drv.ms/f/s!Areeng9Fzbjiw08xUlwoRTmXCfu8?e=wilesB) |
-| RLIPv2-ParSeDA | Swin-T | 10% | 28.31 / 32.93 / 31.87 | [Link](https://1drv.ms/f/s!Areeng9Fzbjiw08xUlwoRTmXCfu8?e=wilesB) |
-| RLIPv2-ParSeDA | Swin-L | 1% | 31.89 / 32.32 / 32.22 | [Link](https://1drv.ms/f/s!Areeng9Fzbjiw08xUlwoRTmXCfu8?e=wilesB) |
-| RLIPv2-ParSeDA | Swin-L | 10% | 34.75 / 38.27 / 37.46 | [Link](https://1drv.ms/f/s!Areeng9Fzbjiw08xUlwoRTmXCfu8?e=wilesB) |
+| RLIPv2-ParSeDA | ResNet-50 | 1% | 22.13 / 24.51 / 23.96 | [Link](https://1drv.ms/f/c/e2b8cd450f9e9eb7/Qreeng9FzbgggOLPIQAAAAAAMVJcKEU5lwn7vA) |
+| RLIPv2-ParSeDA | ResNet-50 | 10% | 23.28 / 30.02 / 28.46 | [Link](https://1drv.ms/f/c/e2b8cd450f9e9eb7/Qreeng9FzbgggOLPIQAAAAAAMVJcKEU5lwn7vA) |
+| RLIPv2-ParSeDA | Swin-T | 1% | 24.26 / 28.92 / 27.85 | [Link](https://1drv.ms/f/c/e2b8cd450f9e9eb7/Qreeng9FzbgggOLPIQAAAAAAMVJcKEU5lwn7vA) |
+| RLIPv2-ParSeDA | Swin-T | 10% | 28.31 / 32.93 / 31.87 | [Link](https://1drv.ms/f/c/e2b8cd450f9e9eb7/Qreeng9FzbgggOLPIQAAAAAAMVJcKEU5lwn7vA) |
+| RLIPv2-ParSeDA | Swin-L | 1% | 31.89 / 32.32 / 32.22 | [Link](https://1drv.ms/f/c/e2b8cd450f9e9eb7/Qreeng9FzbgggOLPIQAAAAAAMVJcKEU5lwn7vA) |
+| RLIPv2-ParSeDA | Swin-L | 10% | 34.75 / 38.27 / 37.46 | [Link](https://1drv.ms/f/c/e2b8cd450f9e9eb7/Qreeng9FzbgggOLPIQAAAAAAMVJcKEU5lwn7vA) |
 
 ### Zero-shot on HICO-DET
 | Model | Backbone | Setting | Rare / Non-Rare / Full | Download |
 | ----- | :------: | :-----: | :--------------------: | :------: |
 | RLIPv2-ParSeDA | ResNet-50 | NF | 19.64 / 17.24 / 17.79 | [Link](https://1drv.ms/f/s!Areeng9FzbjixA-4QhhMWzWQw-Mb?e=1uAxp7) |
-| RLIPv2-ParSeDA | ResNet-50 | UC-RF | 21.45 / 35.85 / 32.97 | [Link](https://1drv.ms/f/s!Areeng9Fzbjiw1Zs3bHxykLj-GlV?e=W03Jai) |
-| RLIPv2-ParSeDA | ResNet-50 | UC-NF | 22.81 / 29.52 / 28.18 | [Link](https://1drv.ms/f/s!Areeng9Fzbjiw1Zs3bHxykLj-GlV?e=W03Jai) |
+| RLIPv2-ParSeDA | ResNet-50 | UC-RF | 21.45 / 35.85 / 32.97 | [Link](https://1drv.ms/f/c/e2b8cd450f9e9eb7/Qreeng9FzbgggOLWIQAAAAAAbN2x8cpC4_hpVQ) |
+| RLIPv2-ParSeDA | ResNet-50 | UC-NF | 22.81 / 29.52 / 28.18 | [Link](https://1drv.ms/f/c/e2b8cd450f9e9eb7/Qreeng9FzbgggOLWIQAAAAAAbN2x8cpC4_hpVQ) |
 | RLIPv2-ParSeDA | Swin-T | NF | 21.24 / 19.47 / 19.87 | [Link](https://1drv.ms/f/s!Areeng9FzbjixA-4QhhMWzWQw-Mb?e=1uAxp7) |
-| RLIPv2-ParSeDA | Swin-T | UC-RF | 26.95 / 39.92 / 37.32 | [Link](https://1drv.ms/f/s!Areeng9Fzbjiw1Zs3bHxykLj-GlV?e=W03Jai) |
-| RLIPv2-ParSeDA | Swin-T | UC-NF | 21.07 / 35.07 / 32.27 | [Link](https://1drv.ms/f/s!Areeng9Fzbjiw1Zs3bHxykLj-GlV?e=W03Jai) |
+| RLIPv2-ParSeDA | Swin-T | UC-RF | 26.95 / 39.92 / 37.32 | [Link](https://1drv.ms/f/c/e2b8cd450f9e9eb7/Qreeng9FzbgggOLWIQAAAAAAbN2x8cpC4_hpVQ) |
+| RLIPv2-ParSeDA | Swin-T | UC-NF | 21.07 / 35.07 / 32.27 | [Link](https://1drv.ms/f/c/e2b8cd450f9e9eb7/Qreeng9FzbgggOLWIQAAAAAAbN2x8cpC4_hpVQ) |
 | RLIPv2-ParSeDA | Swin-L | NF | 27.97 / 21.90 / 23.29 | [Link](https://1drv.ms/f/s!Areeng9FzbjixA-4QhhMWzWQw-Mb?e=1uAxp7) |
-| RLIPv2-ParSeDA | Swin-L | UC-RF | 31.23 / 45.01 / 42.26 | [Link](https://1drv.ms/f/s!Areeng9Fzbjiw1Zs3bHxykLj-GlV?e=W03Jai) |
-| RLIPv2-ParSeDA | Swin-L | UC-NF | 22.65 / 40.51 / 36.94 | [Link](https://1drv.ms/f/s!Areeng9Fzbjiw1Zs3bHxykLj-GlV?e=W03Jai) |
+| RLIPv2-ParSeDA | Swin-L | UC-RF | 31.23 / 45.01 / 42.26 | [Link](https://1drv.ms/f/c/e2b8cd450f9e9eb7/Qreeng9FzbgggOLWIQAAAAAAbN2x8cpC4_hpVQ) |
+| RLIPv2-ParSeDA | Swin-L | UC-NF | 22.65 / 40.51 / 36.94 | [Link](https://1drv.ms/f/c/e2b8cd450f9e9eb7/Qreeng9FzbgggOLWIQAAAAAAbN2x8cpC4_hpVQ) |
 
 ### Fully fine-tuning on V-COCO
 | Model | Backbone | AP_1 / AP_2 | Download |
