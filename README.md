@@ -39,7 +39,7 @@
 
 
 ## Todo list
-Note that if you can not get access to the links provided below (OneDrive is super unstable), **try using another browser, raise an issue, or contact me by e-mail**. I am happy to provide any assistance.
+Note that if you can not get access to the links provided below (OneDrive is super unstable), **try using another browser, raising an issue, or contacting me by e-mail**. I am happy to provide any assistance.
 - [x] 🎉 Release code for pre-training, fine-tuning and inference.
 - [x] 🎉 Release pre-training and fine-tuning annotations. 
 - [x] 🎉 Release checkpoints for pre-training, few-shot, zero-shot and fine-tuning.  
